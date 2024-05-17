@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.notesapp.fragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_add_note"
+            app:destination="@id/add_note" />
+        <action
+            android:id="@+id/action_home_to_edit_note"
+            app:destination="@id/edit_note" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_note"
+        android:name="com.example.notesapp.fragment.add_note"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_add_note_to_home"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_note"
+        android:name="com.example.notesapp.fragment.edit_note"
+        android:label="fragment_edit_note"
+        tools:layout="@layout/fragment_edit_note" >
+        <action
+            android:id="@+id/action_edit_note_to_home"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>

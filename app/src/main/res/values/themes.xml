@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotesApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorPrimary">@color/red_color</item>
+        <item name="colorPrimaryVariant">@color/red_color</item>
+    </style>
+
+    <style name="Theme.NotesApp" parent="Base.Theme.NotesApp" >
+        <item name="android:colorPrimary">@color/red_color</item>
+        <item name="colorPrimaryVariant">@color/red_color</item>
+
+    </style>
+
+    <style name="ProgressBar" >
+        <item name="android:colorPrimary">@color/red_color</item>
+    </style>
+    <style name="MyTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Set the color of the top app bar -->
+        <item name="colorPrimary">@color/my_app_bar_color</item>
+    </style>
+</resources>
